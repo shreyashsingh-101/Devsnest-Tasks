@@ -16,7 +16,7 @@ body{
 .resume{
     box-shadow: 0px 0px 100px 10px rgb(121, 121, 121);
     border-radius: 10px;
-    height: 98vh;
+    height: 740px;
     width: 40vw;
     min-width: 600px;
     display: flex;
