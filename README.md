@@ -6,4 +6,5 @@ Day | Description | Link
 ----|-------------|-----
 Day 1 | Letter Format Using HTML | [Click Here!](https://shreyashsingh-101.github.io/Devsnest-Tasks/HTML%20Day%201/)
 Day 2 | Styling the Letter Using CSS | [Click Here!](https://shreyashsingh-101.github.io/Devsnest-Tasks/HTML_CSS%20Day%202/)
-Day 3 | Resume using HTML and CSS | [Click Here!](https://shreyashsingh-101.github.io/Devsnest-Tasks/Resume%20Day%203/index.html)
+Day 3 | Resume using HTML and CSS | [Click Here!](https://shreyashsingh-101.github.io/Devsnest-Tasks/Resume%20Day%203/)
+Day 4 | Clock using HTML and CSS | [Click Here!](https://shreyashsingh-101.github.io/Devsnest-Tasks/Clock%20Day%204/)

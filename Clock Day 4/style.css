@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(238, 238, 238); 
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.clock__body{
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    border: 10px solid rgb(238, 237, 237);
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgb(160, 160, 160);
+    height:90vh;
+    width: 90vh;
+}
+
+.clock__int{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 12px 3px rgb(160, 160, 160) inset;
+    border: 6px solid rgb(231, 231, 231);
+    background-color: white;
+    border-radius: 50%;
+    height:65vh;
+    width: 65vh;
+}
+
+[class*=hand]{  
+    position: absolute; 
+    height:5px;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0) 50%, black 50%);
+    border-radius: 10px;
+}
+
+.hand__1{
+    width: 55vh;
+    transform:rotate( 80deg);
+}
+
+.hand__2{
+    width: 45vh;
+    transform:rotate( 100deg);
+}
+.hand__3{
+    width: 43vh;
+    transform:rotate( 40deg);
+}
