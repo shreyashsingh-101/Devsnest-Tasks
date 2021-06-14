@@ -89,8 +89,8 @@ console.log(cyl.volume(3,4));
 
 
 sort_custom = (arr) => arr.sort((a, b) => {
-  if(b.title < a.title) return -1;
-  if(b.title > a.title) return 1;
+  if(b.libraryID < a.libraryID) return -1;
+  if(b.libraryID > a.libraryID) return 1;
   return 0;
 } );
 
