@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Comic Neue", cursive;
+  color: #fff;
+}
+
+body {
+  background: rgb(32, 32, 32);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.heading {
+  width: 100%;
+  justify-content: center;
+  color: white;
+  font-size: 5em;
+  font-weight: 400;
+  display: flex;
+}
+
+.heading p {
+  border-bottom: 2px solid white;
+}
+
+.quiz_frame {
+  background-color: rgb(45, 13, 104);
+  margin-top: 20px;
+  height: 70vh;
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 30px 5px rgb(0, 0, 0);
+}
+
+.entry_n{
+  animation: entry_n 400ms;
+}
+.exit_n{
+  animation: exit_n 400ms;
+}
+.entry_p{
+  animation: entry_p 400ms;
+}
+.exit_p{
+  animation: exit_p 400ms;
+}
+
+@keyframes entry_n {
+  0% {
+   transform: translateX(1500px);
+   
+  }
+
+  100% {
+    transform: translateX(0px); 
+  }
+}
+
+@keyframes exit_n {
+  0% {
+   transform: translateX(0px);
+   
+  }
+
+  100% {
+    transform: translateX(-1500px); 
+  }
+}
+
+
+
+@keyframes entry_p {
+  0% {
+   transform: translateX(-1500px);
+   
+  }
+
+  100% {
+    transform: translateX(0px); 
+  }
+}
+
+@keyframes exit_p {
+  0% {
+   transform: translateX(0px);
+   
+  }
+
+  100% {
+    transform: translateX(1500px); 
+  }
+}
+
+
+
+
+.finished {
+  background-color: rgb(45, 13, 104);
+  height: 40vh;
+  width: 60vw;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2.5em;
+  padding: 50px;
+  margin-top: 120px;
+  box-shadow: 0 0 30px 5px rgb(0, 0, 0);
+  animation: finish 600ms;
+}
+
+@keyframes finish {
+  0% {
+    height: 10vh;
+    width: 20vw;
+    font-size: 1em;
+  }
+
+  100% {
+    height: 40vh;
+    width: 60vw;
+    font-size: 2.5em;
+  }
+}
+
+.questions {
+  width: 95%;
+  height: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.2em;
+}
+
+.questions p {
+  width: 100%;
+  padding: 30px;
+}
+
+.options {
+  width: 95%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option::selection,
+.option span::selection {
+  background-color: transparent;
+}
+.option {
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid rgb(91, 21, 223);
+  border-radius: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: rgba(20, 7, 44, 0.945);
+}
+
+.options_list {
+  width: 100%;
+  list-style-type: none;
+  padding-left: 0;
+  overflow: auto;
+}
+
+.previous,
+.next {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(66, 21, 150);
+}
+
+.previous:hover,
+.next:hover {
+  color: rgba(45, 9, 87, 0.829);
+  transform: scale(1.1);
+  filter: drop-shadow(4px 4px 10px rgb(0, 0, 0));
+}
+
+.quiz_status {
+  z-index: 10;
+  font-size: 1.5em;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  width: 50%;
+  background-color: rgb(45, 13, 104);
+  padding: 10px 20px;
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 2.5em;
+  }
+
+  .questions {
+    font-size: 1.3em;
+  }
+  .questions p {
+    padding: 10px;
+  }
+  .option {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .quiz_status {
+    font-size: 1em;
+    width: 90%;
+    flex-direction: column;
+  }
+  .finished {
+    padding: 20px;
+    font-size: 1.5em;
+  }
+  @keyframes finish {
+    0% {
+      height: 10vh;
+    width: 20vw;
+      font-size: .5em;
+    }
+  
+    100% {
+      height: 40vh;
+      width: 60vw;
+      font-size: 1.5em;
+    }
+  }
+}
