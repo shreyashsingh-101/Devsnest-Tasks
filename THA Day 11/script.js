@@ -73,7 +73,16 @@ let current_ques = 0;
 
 let all_ques = document.querySelectorAll(".quiz_frame");
 
-all_ques[0].style.display = "flex";
+document.querySelector(".previous").style.pointerEvents = "none";
+
+document.querySelector(".next").style.pointerEvents = "none";
+
+document.querySelector(".start_btn").addEventListener("click", () => {
+  document.querySelector(".start").style.display = "none";
+  all_ques[0].style.display = "flex";
+  document.querySelector(".previous").style.pointerEvents = "auto";
+  document.querySelector(".next").style.pointerEvents = "auto";
+});
 
 document.querySelector(".next").addEventListener("click", function next() {
   if (current_ques < questions.length - 1) {
@@ -164,6 +173,7 @@ function finished() {
     all_ques[current_ques].style.display = "none";
     document.querySelector(".g_over").innerText = Co;
     document.querySelector(".finished").style.display = "flex";
-    document.querySelector(".container").style.pointerEvents = "none";
+    document.querySelector(".previous").style.pointerEvents = "none";
+    document.querySelector(".next").style.pointerEvents = "none";
   }, 1000);
 }

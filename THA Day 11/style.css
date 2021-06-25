@@ -117,11 +117,37 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
   padding: 50px;
   margin-top: 120px;
   box-shadow: 0 0 30px 5px rgb(0, 0, 0);
   animation: finish 600ms;
+}
+.start {
+  background-color: rgb(45, 13, 104);
+  height: 40vh;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 50px;
+  margin-top: 120px;
+  box-shadow: 0 0 30px 5px rgb(0, 0, 0);
+}
+.start_btn{
+  background-color: green;
+  width:20%;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 1px rgb(26, 26, 26);
+}
+.start_btn:hover{
+  background-color: rgba(3, 94, 3, 0.555);
 }
 
 @keyframes finish {
