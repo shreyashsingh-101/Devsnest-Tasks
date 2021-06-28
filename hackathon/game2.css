@@ -82,12 +82,30 @@ img {
   z-index: 50;
   cursor: pointer;
 }
-.mode:hover {
+
+.mode:hover, .mute:hover {
   background: #c58f3e;
   box-shadow: 0 0 10px 0 #a8782a inset, 0 0 10px 4px #a8782a;
 }
 .mode_display {
   display: none;
+}
+.mute{
+  width: 200px;
+  height: 43px;
+  border: 4px solid #382405;
+  font-family: "Tangerine", cursive;
+  font-size: 40px;
+  background: #c79952;
+  position: absolute;
+  padding-bottom: 10px;
+  margin-top: -612px;
+  margin-left: 1290px;
+  z-index: 50;
+  cursor: pointer;
+}
+.mute_on{
+  border: 4px solid green; 
 }
 
 .sword {
@@ -347,3 +365,4 @@ img {
 .hide {
   display: none;
 }
+

@@ -33,10 +33,9 @@ const paddle = {
 
 // DRAW PADDLE
 function drawPaddle() {
- 
   ctx.drawImage(
     PADDLE,
-    paddle.x -20,
+    paddle.x - 20,
     paddle.y - 100,
     paddle.width + 40,
     paddle.height + 150
@@ -284,8 +283,6 @@ function power_up_2() {
   }, 10000);
 }
 
-
-
 // DRAW FUNCTION
 function draw() {
   drawPaddle();
@@ -297,8 +294,6 @@ function draw() {
   document.querySelector(".score_up").innerText = SCORE;
   document.querySelector(".life").innerText = LIFE;
   document.querySelector(".level").innerText = LEVEL;
-
-  
 }
 
 // game over
@@ -332,7 +327,6 @@ function levelUp() {
     }, 2000);
     WIN.play();
 
-   
     brick.row += 2;
     createBricks();
     ball.speed += 0.5;
@@ -359,10 +353,9 @@ function update() {
   levelUp();
 }
 
-
 function loop() {
   // CLEAR THE CANVAS
- 
+
   ctx.clearRect(0, 0, 600, 700);
   draw();
 
@@ -384,7 +377,6 @@ document.querySelector(".btn").addEventListener("click", () => {
 document.querySelector(".pause").addEventListener("click", () => {
   alert("Game Paused!!! Press OK to continue...");
 });
-
 
 // SHOW GAME OVER MESSAGE
 /* SELECT ELEMENTS */
@@ -409,3 +401,14 @@ function showYouLose() {
   gameover.style.display = "block";
   youlose.style.display = "block";
 }
+
+let mute = document.querySelector(".mute");
+
+document.querySelector(".mute").addEventListener("click", () => {
+  mute.classList.toggle("mute_on");
+  if (BACK.muted == false) {
+    BACK.muted = true;
+  } else {
+    BACK.muted = false;
+  }
+});

@@ -7,17 +7,17 @@ var card = document.querySelector(".card");
 var alla = document.querySelector(".alla");
 alla.classList.add("hide");
 
-let light_mode = document.querySelector('.light_mode');
+let light_mode = document.querySelector(".light_mode");
 let mode = document.querySelector(".back");
-let dark_mode = document.querySelector('.dark_mode');
+let dark_mode = document.querySelector(".dark_mode");
 let mode_btn = document.querySelectorAll(".mode").forEach((mode_btn) => {
   mode_btn.addEventListener("click", () => {
-       mode.classList.toggle('dark');
-       light_mode.classList.toggle('mode_display');
-       dark_mode.classList.toggle('mode_display');
+    mode.classList.toggle("dark");
+    light_mode.classList.toggle("mode_display");
+    dark_mode.classList.toggle("mode_display");
 
-     //   light_mode.style.display = light_mode.style.display="block"?"none":"block";
-     //   dark_mode.style.display = dark_mode.style.display="block"?"none":"block";
+    //   light_mode.style.display = light_mode.style.display="block"?"none":"block";
+    //   dark_mode.style.display = dark_mode.style.display="block"?"none":"block";
   });
 });
 card.classList.add("hide");
@@ -35,3 +35,5 @@ start.addEventListener("click", () => {
     alla.classList.remove("hide");
   }
 });
+
+
