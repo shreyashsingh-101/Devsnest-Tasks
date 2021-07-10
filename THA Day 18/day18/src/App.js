@@ -11,7 +11,7 @@ const BoxB = () => {
 const RowB = () => {
   let boxes = [];
   for (let i = 0; i < 8; i++) {
-    if (i % 2 == 0) boxes.push(<BoxB></BoxB>);
+    if (i % 2 === 0) boxes.push(<BoxB></BoxB>);
     else boxes.push(<BoxW></BoxW>);
   }
 
@@ -21,7 +21,7 @@ const RowB = () => {
 const RowW = () => {
   let boxes = [];
   for (let i = 0; i < 8; i++) {
-    if (i % 2 == 0) boxes.push(<BoxW></BoxW>);
+    if (i % 2 === 0) boxes.push(<BoxW></BoxW>);
     else boxes.push(<BoxB></BoxB>);
   }
 
@@ -31,7 +31,7 @@ const RowW = () => {
 let rows = [];
 
 for (let i = 0; i < 8; i++) {
-  if (i % 2 == 0) rows.push(<RowB></RowB>);
+  if (i % 2 === 0) rows.push(<RowB></RowB>);
   else rows.push(<RowW></RowW>);
 }
 
