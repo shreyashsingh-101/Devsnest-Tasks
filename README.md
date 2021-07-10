@@ -21,3 +21,6 @@ Day 14 | Use of Event Listeners | [Click Here!](https://github.com/shreyashsingh
 Day 15 | React Hello World | [Click Here!](https://inspiring-varahamihira-e8c7e1.netlify.app/)
 Day 16 | React Card and ChessBoard | [Click Here!](https://happy-lumiere-5a8b44.netlify.app/)
 Day 17 | React Props | [Click Here!](https://determined-clarke-fbdc13.netlify.app/)
+Day 18 | React Conditional Rendering | [Click Here!](https://gracious-poitras-755bee.netlify.app/)
+Day 19 | React State Management | [Click Here!](https://lucid-neumann-1c7108.netlify.app/)
+Day 20 | React Hooks | [Click Here!](https://silly-hawking-c4de6b.netlify.app/)
