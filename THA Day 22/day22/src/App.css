@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+}
+body {
+  background-color: rgb(39, 39, 39);
+}
+.heading {
+  text-align: center;
+  color: white;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.637);
+  z-index: 5;
+  padding: 10px;
+  width: 100%;
+}
+
+.template {
+  height: 40vh;
+  width: 40vh;
+  margin: 20px;
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+  margin-bottom: 40px;
+  transition: all 500ms ease-in-out;
+}
+.template:hover{
+  transform: scale(1.1);
+  transition: all 500ms ease-in-out;
+}
+
+.template .image {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.589);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  position: absolute;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.meme_page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meme_image {
+  max-width: 400px;
+  border: 2px solid black;
+  margin-top: 80px;
+}
+
+.caption div {
+  margin: 5px;
+  margin-top: 20px;
+  padding: 6px;
+  font-size: 16px;
+  color: white;
+}
+.caption div input {
+  color: white;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.btns button {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.meme_btn {
+  background-color: white;
+}
+
+.meme_name {
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: rgb(67, 70, 68);
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: white;
+}
+
+.m_name {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  height: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.555);
+  overflow: hidden;
+  transform: translateY(-40px);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  background-color: rgb(87, 87, 87);
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(71, 71, 71);
+}
+::-webkit-scrollbar-track:hover {
+  background-color: #535353;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #242424;
+  height: 70px;
+  border-radius: 16px;
+  border: 1px solid #616161;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #161616;
+  border: 1px solid #000000;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+
+::selection{
+  background: transparent;
+}
